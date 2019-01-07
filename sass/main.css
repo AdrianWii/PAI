@@ -1,0 +1,15 @@
+body {
+  background-color: #fff;
+  padding: 0;
+  margin: 0; }
+
+header {
+  padding-top: 30px;
+  min-height: 70px; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */
