@@ -1,0 +1,83 @@
+header {
+  background-color: #35424a;
+  padding-top: 20px;
+  min-height: 60px;
+  border-bottom: #e8491d 3px solid; }
+  header .container {
+    display: grid;
+    grid-template-columns: auto 30px; }
+  header #logo {
+    width: 10%;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+    header #logo img {
+      width: 160px;
+      height: 45px; }
+  header #login {
+    text-align: center; }
+    header #login img {
+      width: 30px;
+      height: 30px; }
+  header #categories {
+    background-color: #232323;
+    width: 100%;
+    margin: 0 auto; }
+    header #categories #pierwsza_kat {
+      margin-left: auto; }
+    header #categories #ostatnia_kat {
+      margin-right: auto; }
+    header #categories ul {
+      max-width: 1300px;
+      margin: 0 auto;
+      overflow: hidden; }
+    header #categories li {
+      display: inline-block;
+      padding: 0 12px; }
+      header #categories li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #fff;
+        font-weight: 600;
+        text-align: center;
+        line-height: 40px;
+        display: inline-block; }
+      header #categories li .dropbtn {
+        display: inline-block;
+        background-color: #232323;
+        color: white;
+        border: none; }
+      header #categories li .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        background-color: #ececec;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1; }
+        header #categories li .dropdown-content a {
+          line-height: 33px;
+          margin: 0 5px;
+          color: #000;
+          text-align: left;
+          display: block; }
+          header #categories li .dropdown-content a:hover {
+            background-color: #e3e3e3; }
+      header #categories li:hover .dropdown-content {
+        display: block; }
+
+body {
+  background-color: #f7f7f7;
+  padding: 0;
+  margin: 0;
+  font: 15px/1.5 Arial, Helvetica, sans-serif; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden; }
+
+/*# sourceMappingURL=main.css.map */

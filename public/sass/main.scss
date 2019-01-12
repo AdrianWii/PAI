@@ -1,0 +1,23 @@
+$tlo: #f7f7f7;
+$kolor_glowny: #35424a;
+
+@import "branding";
+
+body {
+  background-color: $tlo;
+  padding: 0;
+  margin: 0;
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
