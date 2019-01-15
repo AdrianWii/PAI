@@ -5,20 +5,21 @@ class AppController {
 
     function __construct() {
         $this->request = strtolower($_SERVER['REQUEST_METHOD']);
+        session_start();
     }
 
-    function isGet(){
+    function isGet() {
         return $this->request === 'get';
     }
 
-    function isPost(){
+    function isPost() {
         return $this->request === 'post';
     }
 
-    function render($variables = array(), $filename = null){
-        $templatePath = $filename ? dirname(__DIR__).'\views\\'.get_class($this).'\\'.$filename.'.php':'';
+    function render($variables = array(), $filename = null) {
+        $templatePath = $filename ? dirname(__DIR__) . '\views\\' . get_class($this) . '\\' . $filename . '.php' : '';
         $output = 'File not found';
-        if(file_exists($templatePath)){
+        if (file_exists($templatePath)) {
             extract($variables);
             ob_start();
             include $templatePath;

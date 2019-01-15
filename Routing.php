@@ -10,9 +10,12 @@ class Routing {
             'index' => [
                 'controller' => 'DefaultController',
                 'action' => 'index'],
-            'asd' => [
-                'controller' => '',
-                'action' => 'asd'],
+            'login' => [
+                'controller' => 'DefaultController',
+                'action' => 'login'],
+            'logout' => [
+                'controller' => 'DefaultController',
+                'action' => 'logout'],
         ];
     }
 
