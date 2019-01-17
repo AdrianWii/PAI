@@ -1,6 +1,7 @@
 <?php
 
 require_once('controllers/DefaultController.php');
+require_once('controllers/ProductsController.php');
 
 class Routing {
     public $routes = [];
@@ -9,23 +10,37 @@ class Routing {
         $this->routes = [
             'index' => [
                 'controller' => 'DefaultController',
-                'action' => 'index'],
+                'action' => 'index'
+            ],
             'login' => [
                 'controller' => 'DefaultController',
-                'action' => 'login'],
+                'action' => 'login']
+            ,
             'logout' => [
                 'controller' => 'DefaultController',
-                'action' => 'logout'],
+                'action' => 'logout'
+            ],
+            'products' => [
+                'controller' => 'ProductsController',
+                'action' => 'products'
+            ],
+            'new_user' => [
+                'controller' => 'NewUserController',
+                'action' => 'newUser'
+            ],
         ];
     }
 
-    function run() {
+    function run()
+    {
         $page = isset($_GET['page']) && isset($this->routes[$_GET['page']]) ? $_GET['page'] : 'index';
         if ($this->routes[$page]) {
             $className = $this->routes[$page]['controller'];
             $action = $this->routes[$page]['action'];
             $object = new $className;
-            $object->$action();
+
+            $id = $_GET['id'] ?? '';
+            $object->$action($id);
         }
     }
 }

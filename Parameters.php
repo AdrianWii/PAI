@@ -1,4 +1,5 @@
 <?php
-const SERVERNAME = '149.156.136.151';
-const USERNAME = 'pbielen';
-const PASSWORD = 'patryk1997';
+const SERVERNAME = '127.0.0.1';
+const USERNAME = 'root';
+const PASSWORD = '';
+const DATABASE = 'pbielen';

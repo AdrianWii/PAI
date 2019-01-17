@@ -9,7 +9,7 @@ class Database {
         $this->servername = SERVERNAME;
         $this->username = USERNAME;
         $this->password = PASSWORD;
-        $this->database = $this->username;
+        $this->database = DATABASE;
     }
 
     public function connect(){
@@ -18,7 +18,7 @@ class Database {
                 host=$this->servername;
                 dbname=$this->database", $this->username, $this->password);
         } catch (PDOException $e){
-            return "Connection failed: ".$e->getMessage();
+            die( "Connection failed: ".$e->getMessage());
         }
     }
 }

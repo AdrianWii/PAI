@@ -16,7 +16,8 @@ class AppController {
         return $this->request === 'post';
     }
 
-    function render($variables = array(), $filename = null) {
+    function render($filename = null, $variables = []): void
+    {
         $templatePath = $filename ? dirname(__DIR__) . '\views\\' . get_class($this) . '\\' . $filename . '.php' : '';
         $output = 'File not found';
         if (file_exists($templatePath)) {

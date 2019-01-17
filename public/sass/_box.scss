@@ -1,0 +1,29 @@
+.box {
+  min-width: 200px;
+  width: 30%;
+  min-height: 340px;
+  height: 30%;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 30px;
+  filter: drop-shadow(0 0 6px #dbdbdb);
+
+  h1 {
+    text-align: center;
+    padding-top: 30px;
+    //margin: 40px auto 0 auto;
+  }
+
+  input {
+    margin: 15px auto;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid #757575;
+    ::value{
+      font-weight: 900;
+    }
+  }
+}
